@@ -1,0 +1,17 @@
+name: Craftsman
+type: theme
+description: 'A set of tools to craft awesome Drupal themes.'
+core: 8.x
+base theme: classy
+libraries:
+  - craftsman/html
+  - craftsman/page
+regions:
+  branding: Branding
+  header: Header
+  pre_content: 'Pre content'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  post_content: 'Post content'
+  footer: Footer

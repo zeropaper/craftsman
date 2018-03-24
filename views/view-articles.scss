@@ -1,0 +1,13 @@
+@import "./../sass/_import";
+
+.view-articles {
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .views-row {
+    width: 25%;
+    padding: 1vmax;
+  }
+}

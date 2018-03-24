@@ -1,0 +1,121 @@
+# fonts:
+#   version: VERSION
+#   css:
+#     theme:
+#       fonts/ibm-plex-mono.css: {}
+#     # theme:
+#     #   '//fonts.googleapis.com/css?family=Open+Sans:400,700,300': {type: external} # external font
+#     #   fonts/poppins.css: {} # local font
+
+# fontawesome:
+#   version: 4.7.0
+#   css:
+#     component:
+#       '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
+
+# material_icon:
+#   version: VERSION
+#   css:
+#     component:
+#       'https://fonts.googleapis.com/icon?family=Material+Icons': {type: external}
+
+# material_design_lite:
+#   version: VERSION
+#   js:
+#     node_modules/material-design-lite/material.min.js: {}
+#   css:
+#     component:
+#       node_modules/material-design-lite/material.min.css: {}
+#   dependencies:
+#     - craftsman/material_icon
+
+# materialize_css:
+#   version: VERSION
+#   css:
+#     component:
+#       node_modules/materialize-css/dist/css/materialize.min.css: {}
+#   dependencies:
+#     - craftsman/material_icon
+
+# materialize_js:
+#   version: VERSION
+#   js:
+#     node_modules/materialize-css/dist/js/materialize.min.js: {}
+#   dependencies:
+#     - core/jquery
+
+# global_styles:
+#   version: VERSION
+#   js:
+#     js/dist/theme.js: {}
+#   css:
+#     theme:
+#       css/styles.css: {}
+#   dependencies:
+#     # - core/drupal
+#     # - craftsman/materialize_css
+#     - craftsman/materialize_js
+
+###############################################################
+
+html:
+  version: VERSION
+  js:
+    layout/html.js: {}
+  css:
+    theme:
+      layout/html.css: {}
+
+page:
+  version: VERSION
+  js:
+    layout/page.js: {}
+  css:
+    theme:
+      layout/page.css: {}
+
+form-element:
+  version: VERSION
+  js:
+    form/element.js: {}
+  css:
+    theme:
+      form/element.css: {}
+
+form-select:
+  version: VERSION
+  js:
+    form/select.js: {}
+  css:
+    theme:
+      form/select.css: {}
+
+form-input:
+  version: VERSION
+  js:
+    form/input.js: {}
+  css:
+    theme:
+      form/input.css: {}
+
+form-radios:
+  version: VERSION
+  js:
+    form/radios.js: {}
+  css:
+    theme:
+      form/radios.css: {}
+
+form-checkboxes:
+  version: VERSION
+  js:
+    form/checkboxes.js: {}
+  css:
+    theme:
+      form/checkboxes.css: {}
+
+view-articles:
+  version: VERSION
+  css:
+    theme:
+      views/view-articles.css: {}
