@@ -1,9 +1,9 @@
 # Craftsman
 
 */*.map
-*/*.precss
 */*.css
 */*.js
+*/*.precss
 !Gruntfile.js
 !*/*.es6.js
 
