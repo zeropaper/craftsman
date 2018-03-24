@@ -37,28 +37,23 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            src: ['**/*.scss', '!node_modules/**/*'],
+            src: ['**/*.scss', '!**/_*.scss', '!node_modules/**/*'],
             dest: '',
             ext: '.precss',
-            // extDot: 'first'
           }
         ]
       }
     },
     postcss: {
       options: {
-        // map: true, // inline sourcemaps
-
-        // or
         map: {
-          inline: false, // save all sourcemaps as separate files...
-          // annotation: '/' // ...to the specified directory
+          inline: false,
         },
 
         processors: [
           require('autoprefixer')({
             browsers: 'last 2 versions',
-          }), // add vendor prefixes
+          }),
         ]
       },
       styles: {
@@ -68,7 +63,6 @@ module.exports = function(grunt) {
             src: ['**/*.precss', '!node_modules/**/*'],
             dest: '',
             ext: '.css',
-            // extDot: 'first'
           }
         ]
       }

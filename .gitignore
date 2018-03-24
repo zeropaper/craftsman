@@ -4,6 +4,7 @@
 */*.precss
 */*.css
 */*.js
+!Gruntfile.js
 !*/*.es6.js
 
 # Logs
