@@ -3,6 +3,7 @@
 */*.map
 */*.css
 */*.js
+# Keep the following line as-is.
 */*.precss
 !Gruntfile.js
 !*/*.es6.js

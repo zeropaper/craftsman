@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            src: ['**/*.scss', '!**/_*.scss', '!node_modules/**/*'],
+            src: ['**/*.scss', '!node_modules/**/*'],
             dest: '',
             ext: '.precss',
           }
@@ -67,6 +67,9 @@ module.exports = function(grunt) {
         ]
       }
     },
+    clean: {
+      precss: ['**/*.precss']
+    },
 
     browserSync: {
       options: {
@@ -92,7 +95,7 @@ module.exports = function(grunt) {
 
       styles: {
         files: ['**/*.scss', '!**/_*.scss'],
-        tasks: ['sass', 'postcss'],
+        tasks: ['sass', 'postcss', 'clean:precss'],
       },
 
       // templates: {
