@@ -5,15 +5,16 @@ A set of tools to develop awesome Drupal theme.
 The goal of those tools is to generate assets which can be consumed by a Drupal site the best way possible.
 The CSS and JS code aggregation is meant to be done by Drupal, minification by a module like AdvAgg.
 
-## Features
-
-**TODO**
-
 ## Usage
 
 Craftsman is **not** a base theme.
 
-**TODO**
+To start a project with Craftsman:
+1. clone the repository (or better a fork) in one of the themes folders of Drupal
+1. install Grunt CLI if needed (`npm install -g grunt-cli`)
+1. install the dependencies with `npm install`
+1. install the theme in Drupal
+1. then `npm run serve` to start working
 
 ### Structure
 
@@ -60,18 +61,13 @@ You can then easily take advantage of all the Drupal built-in libraries and the 
 
 </details>
 
-<details>
-  <summary></summary>
-  
-* Create 
-  
-</details>
+## Roadmap:
 
-## TODOs:
-
-* Render twig templates as styleguide / prototype in way as close as Drupal does
-* Generate JS documentation
-* Run E2E tests
+* [ ] #1 Render twig templates as styleguide / prototype in way as close as Drupal does
+* [ ] #2 Generate JS documentation
+* [ ] #3 Run E2E tests
+  * [ ] on Drupal site
+  * [ ] on prototype
 
 ## Build and deployment strategies
 
@@ -100,3 +96,7 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 ## Author
 
 Valentin `zeropaper` Vago
+
+## License
+
+[MIT](./LICENSE)
