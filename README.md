@@ -7,13 +7,13 @@ The CSS and JS code aggregation is meant to be done by Drupal, minification by a
 
 ## Features
 
-
+**TODO**
 
 ## Usage
 
 Craftsman is **not** a base theme.
 
-You can either
+**TODO**
 
 ### Structure
 
@@ -48,7 +48,7 @@ You can then easily take advantage of all the Drupal built-in libraries and the 
       theme:
         views/view-VIEW_ID.css: {}
   ```
-* In the `craftsman.theme` file, add a `craftsman_preprocess_views_view` hook implementation as follow:
+* In the `craftsman.theme` file, add a `craftsman_preprocess_views_view` hook similar to:
   ```php
   function craftsman_preprocess_views_view(&$variables) {
     if ($variables['id'] == 'VIEW_ID') {
@@ -60,11 +60,16 @@ You can then easily take advantage of all the Drupal built-in libraries and the 
 
 </details>
 
+<details>
+  <summary></summary>
+  
+* Create 
+  
+</details>
+
 ## TODOs:
 
-* Compile assets as needed:
-  https://www.npmjs.com/package/grunt-chokidar#compiling-files-as-needed
-* Render twig templates as styleguide / prototype
+* Render twig templates as styleguide / prototype in way as close as Drupal does
 * Generate JS documentation
 * Run E2E tests
 
@@ -81,3 +86,17 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 !*/*.es6.js
 ```
 
+## Further reading
+
+* Twig
+  * https://www.drupal.org/docs/8/theming/twig/discovering-and-inspecting-variables-in-twig-templates
+  * https://www.drupal.org/docs/8/theming/twig/functions-in-twig-templates
+* JS
+  * https://www.drupal.org/docs/8/api/javascript-api/javascript-api-overview
+* Breakpoints
+  * https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
+  * https://www.prometsource.com/blog/how-set-responsive-images-drupal-8
+
+## Author
+
+Valentin `zeropaper` Vago

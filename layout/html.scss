@@ -1,3 +1,5 @@
+@import "./../sass/_import";
+
 *,
 *:before,
 *:after {
@@ -6,16 +8,40 @@
 
 html,
 body {
-  width: 100%;
   min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 html {
+  width: 100%;
   font-size: 16px;
 }
 
-body {
-  background-color: white;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend %headings;
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
+}
+
+h4 {
+  @extend %h4;
+}
+
+h5 {
+  @extend %h5;
 }

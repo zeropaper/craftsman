@@ -4,6 +4,9 @@ description: 'A set of tools to craft awesome Drupal themes.'
 core: 8.x
 base theme: classy
 libraries:
+  - core/drupalSettings
+  - core/drupal
+  - core/jquery
   - craftsman/html
   - craftsman/page
 regions:

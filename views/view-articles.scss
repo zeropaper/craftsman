@@ -9,5 +9,22 @@
   .views-row {
     width: 25%;
     padding: 1vmax;
+    // for the children
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .views-field {
+    &:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+
+  .views-field-field-image {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
   }
 }

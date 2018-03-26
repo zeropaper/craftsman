@@ -1,0 +1,23 @@
+craftsman.group1.mobile:
+  label: narrow
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+  group: craftsman.group1
+craftsman.group1.narrow:
+  label: narrow
+  mediaQuery: '(min-width: 560px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+  group: craftsman.group1
+craftsman.group1.wide:
+  label: wide
+  mediaQuery: '(min-width: 851px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+  group: craftsman.group1
