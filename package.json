@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "craftsman",
   "version": "1.0.0",
   "description": "A set of tools to craft awesome Drupal themes.",
@@ -12,6 +13,7 @@
     "SCSS",
     "ES6"
   ],
+  "engines" : { "node" : ">=8.10.0" },
   "author": "Valentin Vago <zeropaper@irata.ch>",
   "license": "MIT",
   "devDependencies": {
