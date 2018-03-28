@@ -5,6 +5,19 @@ A set of tools to develop awesome Drupal theme.
 The goal of those tools is to generate assets which can be consumed by a Drupal site the best way possible.
 The CSS and JS code aggregation is meant to be done by Drupal, minification by a module like AdvAgg.
 
+## Why?
+
+Of course you could build base your theme on a other one and/or use a fancy framework
+which produces a monolythic `app.js` and `styles.css`. You could.  
+
+But!
+
+Drupal has already (almost) everything ready for the front-end of a fancy website.   
+You doubt?  
+Just have a look at the Drupal default admin theme and the way scripts and stylesheets handling is done.
+The libraries available with the Drupal core allow you to do everything. Backbone, jQuery, jQuery UI, ...
+Drupal handles the loading, configuration and initialization of widgets very well.
+
 ## Usage
 
 Craftsman is **not** a base theme.
@@ -19,7 +32,7 @@ To start a project with Craftsman:
 ### Structure
 
 The tools are designed to leave a great freedom of organisation.  
-If you you have a JS file with the extension `.es6.js` a file with the extension `.js` (like Drupal does for its JS).  
+If you you have a JS file with the extension `.es6.js` a file with the extension `.js` will be created (like Drupal does for its JS).  
 Similar applies to SCSS files which are converted in CSS.
 
 You can then easily take advantage of all the Drupal built-in libraries and the dependency management, keep your code well organized according to your wishes.
@@ -92,6 +105,10 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 * Breakpoints
   * https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
   * https://www.prometsource.com/blog/how-set-responsive-images-drupal-8
+* The Drupal JavaScript (it's less than 600 lines)
+  https://github.com/drupal/drupal/blob/8.5.x/core/misc/drupal.es6.js
+* The available libraries
+  https://github.com/drupal/drupal/blob/8.5.x/core/core.libraries.yml 
 
 ## Author
 
