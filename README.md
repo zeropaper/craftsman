@@ -27,7 +27,7 @@ To start a project with Craftsman:
 1. install Grunt CLI if needed (`npm install -g grunt-cli`)
 1. install the dependencies with `npm install`
 1. install the theme in Drupal
-1. then `npm run serve` to start working
+1. then `npm run auto-build` to start working
 
 ### Structure
 
@@ -36,6 +36,13 @@ If you you have a JS file with the extension `.es6.js` a file with the extension
 Similar applies to SCSS files which are converted in CSS.
 
 You can then easily take advantage of all the Drupal built-in libraries and the dependency management, keep your code well organized according to your wishes.
+
+### Scripts
+
+You can use `npm` to run the following tasks:
+* `npm run build` to compile all assets
+* `npm run auto-build` to compile assets when they change.  
+  The information about 
 
 ### Examples
 
