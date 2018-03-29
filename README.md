@@ -112,9 +112,9 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 * Breakpoints
   * https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
   * https://www.prometsource.com/blog/how-set-responsive-images-drupal-8
-* The Drupal JavaScript (it's less than 600 lines)
+* The Drupal JavaScript (it's less than 600 lines)  
   https://github.com/drupal/drupal/blob/8.5.x/core/misc/drupal.es6.js
-* The available libraries
+* The available libraries  
   https://github.com/drupal/drupal/blob/8.5.x/core/core.libraries.yml 
 
 ## Author
