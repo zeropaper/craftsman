@@ -96,6 +96,19 @@ module.exports = (grunt) => {
     },
 
 
+    jsdoc: {
+      options: {},
+      scripts: {
+        src: [
+          './**/*.es6.js',
+          './../../../core/**/*.es6.js',
+          '!node_modules/**'
+        ],
+        dest: 'project-docs/js'
+      },
+    },
+
+
     chokidar: {
       options: {
         spawn: false,
