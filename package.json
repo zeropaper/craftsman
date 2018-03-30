@@ -3,7 +3,6 @@
   "name": "craftsman",
   "version": "1.0.0",
   "description": "A set of tools to craft awesome Drupal themes.",
-  "main": "index.js",
   "scripts": {
     "auto-build": "grunt",
     "build": "grunt build",
