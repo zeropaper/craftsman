@@ -102,6 +102,7 @@ module.exports = (grunt) => {
         src: [
           './**/*.es6.js',
           './../../../core/**/*.es6.js',
+          './../../../core/assets/vendor/**/*.js',
           '!node_modules/**'
         ],
         dest: 'project-docs/js'
@@ -122,7 +123,6 @@ module.exports = (grunt) => {
       styles: {
         files: [
           '**/*.scss',
-          // '!**/_*.scss',
           '!node_modules**/*',
         ],
         tasks: ['sass', 'postcss', 'clean:precss'],
@@ -141,7 +141,7 @@ module.exports = (grunt) => {
 
   // this event listener is aimed to rebuild as few files as possible
   grunt.event.on('chokidar', (action, filepath, target) => {
-    grunt.log.writeln(`${target}: ${filepath} has ${action}`);
+    grunt.log.writeln(`${target}: ${filepath} has ${action} ${path.basename(filepath)[0]}`);
     const ext = filepath.split('.').slice(1).join('.');
 
     if (ext === 'es6.js') {
@@ -153,13 +153,16 @@ module.exports = (grunt) => {
     }
     // scss import files (name starting with "_") should trigger the rebuild of all CSS
     else if (ext === 'scss' && path.basename(filepath)[0] !== '_') {
+      const precssName = changeExt(filepath, '.scss', '.precss');
+      const cssName = changeExt(filepath, '.scss', '.css');
+      grunt.log.writeln(`style: ${filepath} -> ${precssName} -> ${cssName}`);
       grunt.config('sass.styles', {
         src: filepath,
-        dest: changeExt(filepath, '.scss', '.precss'),
+        dest: precssName,
       });
       grunt.config('postcss.styles', {
-        src: changeExt(filepath, '.css', '.precss'),
-        dest: changeExt(filepath, '.scss', '.css'),
+        src: precssName,
+        dest: cssName,
       });
       // The clean task can be left as-is
     }
