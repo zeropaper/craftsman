@@ -9,6 +9,7 @@ libraries:
   - core/jquery
   - craftsman/html
   - craftsman/page
+  - craftsman/tags
 regions:
   branding: Branding
   header: Header

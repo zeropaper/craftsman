@@ -68,3 +68,8 @@ view-articles:
     theme:
       views/view-articles.css: {}
 
+tags:
+  version: VERSION
+  css:
+    theme:
+      tags/tags.css: {}

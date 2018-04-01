@@ -1,0 +1,40 @@
+@import "../sass/_import";
+
+[class*="-field-tags"] {
+  font-size: 0.72em;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding: 0;
+    margin: 0 .8em .4em 0;
+  }
+
+  a {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    border: 1px solid currentColor;
+    border-radius: 0 1em 1em 0;
+    padding: 0 1em 0 .2em;
+    text-decoration: none;
+    &::after {
+      content: '';
+      position: absolute;
+      border: 1px solid currentColor;
+      display: block;
+      top: 50%;
+      right: .2em;
+      width: .4em;
+      height: .4em;
+      margin-top: -.2em;
+      border-radius: .2em;
+    }
+  }
+}
