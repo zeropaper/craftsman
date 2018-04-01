@@ -1,6 +1,6 @@
 # Craftsman
 
-A set of tools to develop awesome Drupal theme.
+A set of tools to develop awesome Drupal 8 theme.
 
 The goal of those tools is to generate assets which can be consumed by a Drupal site the best way possible.
 The CSS and JS code aggregation is meant to be done by Drupal, minification by a module like AdvAgg.
@@ -100,6 +100,7 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 */*.precss
 !Gruntfile.js
 !*/*.es6.js
+project-docs
 ```
 
 ## Further reading
@@ -112,6 +113,8 @@ By default, Craftsman expect an automated build for deployment, if you want to k
 * Breakpoints
   * https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
   * https://www.prometsource.com/blog/how-set-responsive-images-drupal-8
+* Templates suggestions  
+  https://www.dannyenglander.com/blog/drupal-8-theming-tutorial-how-craft-custom-theme-hook-suggestions-and-templates
 * The Drupal JavaScript (it's less than 600 lines)  
   https://github.com/drupal/drupal/blob/8.5.x/core/misc/drupal.es6.js
 * The available libraries  
