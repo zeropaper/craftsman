@@ -1,5 +1,20 @@
-$heading-font: 'IBM Plex Mono Light', monospace;
+$text-color: black !default;
+$body-color: #cfc4c1 !default;
+
+/**
+ * Links
+ */
+$link-color: #fff73f !default;
+$link-decoration: none !default;
+$link-hover-color: adjust-hue($link-color, -6deg) !default;
+$link-hover-decoration: $link-decoration !default;
+
 /**
  * Tags
  */
 
+
+/**
+ * Headings
+ */
+$heading-font: 'IBM Plex Mono Light', monospace  !default;
