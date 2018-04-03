@@ -40,9 +40,10 @@ function craftsman_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = isset($variables['node_type']) ? 'nodetype--' . $variables['node_type'] : '';
   // Logged in class.
   $variables['attributes']['class'][] = $variables['logged_in'] ? 'logged-in' : 'logged-out';
-  /*
   // If is debug.
   $variables['debug'] = theme_get_setting('debug');
+  // dump($variables['debug'] . ' debug');
+  /*
   if ($variables['debug']) {
     $variables['attributes']['class'][] = 'debug';
     $variables['browsersync_port'] = theme_get_setting('browsersync_port');
