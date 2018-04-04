@@ -1,0 +1,57 @@
+/**
+ * Links
+ */
+/**
+ * Tags
+ */
+/**
+ * Headings
+ */
+/**
+ * Headings
+ */
+/**
+ * Paragraphs and block elements
+ */
+/**
+ * Links
+ */
+[class*="-field-tags"] ul,
+[class*="-field-tags"] .field__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+[class*="-field-tags"] li,
+[class*="-field-tags"] .field__item {
+  padding: 0;
+  margin: 0 .8em .4em 0; }
+
+[class*="-field-tags"] a {
+  font-size: 0.72em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 0 1em 1em 0;
+  padding: 0 1em 0 .2em;
+  text-decoration: none; }
+  [class*="-field-tags"] a, [class*="-field-tags"] a:link, [class*="-field-tags"] a:hover, [class*="-field-tags"] a:focus, [class*="-field-tags"] a:visited {
+    color: black; }
+  [class*="-field-tags"] a::after {
+    content: '';
+    position: absolute;
+    border: 1px solid currentColor;
+    display: block;
+    top: 50%;
+    right: .2em;
+    width: .4em;
+    height: .4em;
+    margin-top: -.2em;
+    border-radius: .2em; }
+/*# sourceMappingURL=tags.css.map */

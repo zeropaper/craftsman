@@ -1,0 +1,82 @@
+/**
+ * Links
+ */
+/**
+ * Tags
+ */
+/**
+ * Headings
+ */
+/**
+ * Headings
+ */
+.layout-container h1,
+.layout-container h2,
+.layout-container h3,
+.layout-container h4,
+.layout-container h5 {
+  font-family: "IBM Plex Mono Light", monospace;
+  margin: 0 0 .5em 0; }
+
+.layout-container h1 {
+  font-size: 3.6rem; }
+
+
+.layout-container h2 {
+  font-size: 2rem; }
+
+
+.layout-container h3 {
+  font-size: 1.6rem; }
+
+
+.layout-container h4 {
+  font-size: 1.4rem; }
+
+
+.layout-container h5 {
+  font-size: 1.2rem; }
+
+/**
+ * Paragraphs and block elements
+ */
+.layout-container p {
+  margin: 0 0 .5em 0; }
+
+/**
+ * Links
+ */
+.layout-container a:focus, .layout-container a:hover {
+  color: #ffe43f;
+  text-decoration: none; }
+
+.layout-container a, .layout-container a:link {
+  color: #fff73f;
+  text-decoration: none; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e4e1e0; }
+
+html {
+  width: 100%;
+  font-size: 13px; }
+  @media screen and (min-width: 410px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 16px; } }
+/*# sourceMappingURL=html.css.map */
