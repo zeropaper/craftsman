@@ -1,8 +1,8 @@
 # Craftsman
 
-*/*.map
-*/*.css
-*/*.js
+# */*.map
+# */*.css
+# */*.js
 # Keep the following line as-is.
 */*.precss
 !Gruntfile.js
