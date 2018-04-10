@@ -1,0 +1,40 @@
+.nodetype--experiment {
+  .region-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-system-main-block,
+  .node--view-mode-full {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .node__content {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .field {
+    z-index: 2;
+  }
+
+  .field--name-field-experiment-iframe {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}

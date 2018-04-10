@@ -1,5 +1,137 @@
 @import "./_page-mixins";
 
-.page {
-  background-color: lightgrey;
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+#drupal-live-announce {
+  top: 0;
+  right: 0;
+}
+
+body,
+.dialog-off-canvas-main-canvas {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+}
+
+.layout-container {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex-direction: column;
+
+  > header {
+    z-index: 3;
+  }
+
+  > main {
+    z-index: 2;
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+  }
+}
+
+.region-header {
+  margin: 0;
+  padding: 0 .5rem;
+  background-color: transparentize(black, 0.5);
+  color: white;
+  display: flex;
+  align-items: stretch;
+
+  .block {
+    padding: .5rem .5rem .5rem 0;
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+
+  .block-page-title-block {
+    flex-grow: 1;
+  }
+
+  .menu {
+    &,
+    &-item {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .block-page-title-block {
+    overflow: hidden;
+  }
+
+  .site-name {
+    white-space: nowrap;
+  }
+}
+
+h1.page-title {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 100%;
+  margin: 0;
+  @extend %text-overflow-ellipsis;
+}
+
+.layout-content {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.region-content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+.layout-sidebar-first {
+
+}
+
+.layout-sidebar-second {
+
+}
+
+.layout-footer {
+
+}
+
+.nodetype--experiment {
+
+}
+*/
+
+.entity-pager-list {
+  margin: 0;
+  display: flex;
+
+  .entity-pager-item {
+    display: block;
+    margin: 0;
+    &:first-child {
+      padding-right: .5rem;
+    }
+  }
 }

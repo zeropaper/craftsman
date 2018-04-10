@@ -34,6 +34,16 @@
 }
 
 /**
+ * Text
+ */
+%text-overflow-ellipsis {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/**
  * Links
  */
 %a-hover {

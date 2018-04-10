@@ -1,0 +1,32 @@
+.region-header .navigation.menu--main {
+  padding-bottom: 0; }
+
+.menu--hamburger {
+  position: relative;
+  height: 100%; }
+  .menu--hamburger input {
+    display: none; }
+  .menu--hamburger .menu {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    padding: .5rem;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    pointer-events: none;
+    will-change: transform;
+    -webkit-transition: opacity 218ms ease-in , -webkit-transform 218ms ease-out;
+    transition: opacity 218ms ease-in , -webkit-transform 218ms ease-out;
+    transition: transform 218ms ease-out , opacity 218ms ease-in;
+    transition: transform 218ms ease-out , opacity 218ms ease-in , -webkit-transform 218ms ease-out; }
+  .menu--hamburger input:checked + .menu {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  .menu--hamburger .menu-item {
+    margin-bottom: .5rem; }
+    .menu--hamburger .menu-item:last-child {
+      margin-bottom: 0; }
+/*# sourceMappingURL=block--mainnavigation.css.map */

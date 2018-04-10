@@ -44,6 +44,9 @@
   margin: 0 0 .5em 0; }
 
 /**
+ * Text
+ */
+/**
  * Links
  */
 .layout-container a:focus, .layout-container a:hover {
@@ -65,7 +68,8 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  background-color: #e4e1e0; }
+  background-color: #e4e1e0;
+  }
 
 html {
   width: 100%;
@@ -79,4 +83,8 @@ html {
   @media screen and (min-width: 1024px) {
     html {
       font-size: 16px; } }
+
+.layout-container img {
+  max-width: 100%;
+  height: auto; }
 /*# sourceMappingURL=html.css.map */

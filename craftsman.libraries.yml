@@ -73,3 +73,15 @@ tags:
   css:
     theme:
       tags/tags.css: {}
+
+block-mainnavigation:
+  version: VERSION
+  css:
+    theme:
+      blocks/block--mainnavigation.css: {}
+
+node-experiment:
+  version: VERSION
+  css:
+    theme:
+      node/node--experiment.css: {}
