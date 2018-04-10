@@ -1,0 +1,21 @@
+.alias--events {
+  .block-system-main-block,
+  .views-element-container,
+  .view-events,
+  .view-content,
+  .geolocation-common-map,
+  .geolocation-common-map-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  .feed-icons {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: 3;
+  }
+}

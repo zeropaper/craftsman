@@ -68,6 +68,12 @@ view-articles:
     theme:
       views/view-articles.css: {}
 
+view-events:
+  version: VERSION
+  css:
+    theme:
+      views/view-events.css: {}
+
 tags:
   version: VERSION
   css:

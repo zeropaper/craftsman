@@ -1,3 +1,5 @@
+@import "../sass/import";
+
 .nodetype--experiment {
   .region-content {
     padding: 0;
@@ -16,15 +18,22 @@
   .node__content {
     position: relative;
     flex-grow: 1;
+    .field {
+      z-index: 2;
+      position: relative;
+      background-color: transparentize($body-color, 0.5);
+      padding: .5rem;
+      margin: .5rem;
+    }
   }
 
-  .field {
-    z-index: 2;
-  }
 
-  .field--name-field-experiment-iframe {
+  .field.field--name-field-experiment-iframe {
+    background: none;
     z-index: 1;
     position: absolute;
+    padding: 0;
+    margin: 0;
     top: 0;
     left: 0;
     bottom: 0;

@@ -83,6 +83,7 @@ body,
 }
 
 h1.page-title {
+  text-align: center;
   font-size: 1rem;
   font-weight: 400;
   max-width: 100%;
@@ -100,7 +101,6 @@ h1.page-title {
 .region-content {
   flex-grow: 1;
   overflow: auto;
-  padding: .5rem;
   display: flex;
   flex-direction: column;
 }

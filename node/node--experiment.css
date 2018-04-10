@@ -1,3 +1,24 @@
+/**
+ * Links
+ */
+/**
+ * Tags
+ */
+/**
+ * Headings
+ */
+/**
+ * Headings
+ */
+/**
+ * Paragraphs and block elements
+ */
+/**
+ * Text
+ */
+/**
+ * Links
+ */
 .nodetype--experiment .region-content {
   padding: 0;
   display: -webkit-box;
@@ -26,18 +47,24 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+  .nodetype--experiment .node__content .field {
+    z-index: 2;
+    position: relative;
+    background-color: rgba(228, 225, 224, 0.5);
+    padding: .5rem;
+    margin: .5rem; }
 
-.nodetype--experiment .field {
-  z-index: 2; }
-
-.nodetype--experiment .field--name-field-experiment-iframe {
+.nodetype--experiment .field.field--name-field-experiment-iframe {
+  background: none;
   z-index: 1;
   position: absolute;
+  padding: 0;
+  margin: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0; }
-  .nodetype--experiment .field--name-field-experiment-iframe iframe {
+  .nodetype--experiment .field.field--name-field-experiment-iframe iframe {
     border: none;
     width: 100%;
     height: 100%;

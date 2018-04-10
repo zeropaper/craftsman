@@ -52,6 +52,9 @@ function craftsman_preprocess_views_view(&$variables) {
   if ($variables['id'] == 'articles') {
     $variables['#attached']['library'][] = 'craftsman/view-articles';
   }
+  elseif ($variables['id'] == 'events') {
+    $variables['#attached']['library'][] = 'craftsman/view-events';
+  }
 }
 
 /**
