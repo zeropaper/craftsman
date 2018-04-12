@@ -18,32 +18,57 @@
   .node__content {
     position: relative;
     flex-grow: 1;
+
     .field {
-      z-index: 2;
+      z-index: 5;
       position: relative;
-      background-color: transparentize($body-color, 0.5);
+      background-color: transparentize($body-color, 0.75);
       padding: .5rem;
       margin: .5rem;
     }
   }
 
+  .node__meta {
+    display: none;
+  }
 
-  .field.field--name-field-experiment-iframe {
-    background: none;
-    z-index: 1;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
+  .field {
+    &.field--name-field-experiment-iframe,
+    &.field--name-field-experiment-pictures {
+      background: none;
       position: absolute;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &.field--name-field-experiment-iframe {
+      z-index: 4;
+
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+
+    &.field--name-field-experiment-pictures {
+      z-index: 3;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.field--name-field-experiment-style,
+    &.field--name-field-experiment-script {
+      display: none;
     }
   }
 }
+
