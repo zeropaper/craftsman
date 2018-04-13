@@ -91,3 +91,10 @@ node-experiment:
   css:
     theme:
       node/node--experiment.css: {}
+
+node-experiment-1:
+  version: VERSION
+  css:
+    theme:
+      node/node/experiments/1.css: {}
+

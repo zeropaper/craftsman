@@ -8,6 +8,8 @@
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\image\Entity\ImageStyle;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_html().
@@ -38,7 +40,12 @@ function craftsman_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = \Drupal::service('path.matcher')
     ->isFrontPage() ? 'frontpage' : '';
   // Node type class.
-  $variables['attributes']['class'][] = isset($variables['node_type']) ? 'nodetype--' . $variables['node_type'] : '';
+  // Node ID.
+  $params = Url::fromUserInput($path)->getRouteParameters();
+  if (isset($params['node'])) {
+    $node = Node::load($params['node']);
+    $variables['attributes']['class'][] = $node ? 'node-' . $node->id() . ' nodetype--' . $node->getType() : '';
+  }
   // Logged in class.
   $variables['attributes']['class'][] = $variables['logged_in'] ? 'logged-in' : 'logged-out';
   // If is debug.
