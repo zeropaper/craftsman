@@ -1,3 +1,5 @@
+@import "../sass/import";
+
 .region-header .navigation.menu--main {
   padding-bottom: 0;
 }
@@ -10,28 +12,89 @@
     display: none;
   }
 
+  label {
+    cursor: pointer;
+    color: $link-color;
+    transition: color 218ms ease-out;
+    position: relative;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+
+    &::before {
+      z-index: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      top: -.5vmin;
+      left: -.5vmin;
+      width: calc(100% + 1vmin);
+      height: calc(100% + 1vmin);
+      border-radius: 100%;
+      border: .125vmin solid $body-color;
+      transition: border-color 218ms ease-out;
+    }
+  }
+
   .menu {
     position: absolute;
     top: 100%;
-    background-color: black;
-    padding: .5rem;
-    // transform: translate3d(0, 100%, 0);
+    left: -2vw;
+    background-color: $alt-body-color;
+    color: $alt-text-color;
+    padding: 1vw 2vw;
     transform: translate3d(-100%, 0, 0);
     opacity: 0;
     pointer-events: none;
     will-change: transform;
     transition: transform 218ms ease-out
               , opacity 218ms ease-in;
+
+    a {
+      &,
+      &:link,
+      &:visited {
+        color: $alt-link-color;
+      }
+      &:hover,
+      &:focus {
+        color: $alt-link-hover-color;
+      }
+    }
+  }
+
+  /* for when the menu is not placed first */
+  * + & {
+    .menu {
+      left: auto;
+      right: -2vw;
+      text-align: right;
+      transform: translate3d(+100%, 0, 0);
+    }
   }
 
   input:checked + .menu {
     opacity: 1;
     pointer-events: all;
     transform: translate3d(0, 0, 0);
+
+    + label {
+      color: $alt-text-color;
+
+      &:hover {
+        color: $alt-link-hover-color;
+      }
+
+      &::before {
+        border-color: $link-color;
+      }
+    }
   }
 
   .menu-item {
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
+
     &:last-child {
       margin-bottom: 0;
     }

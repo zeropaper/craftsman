@@ -1,13 +1,20 @@
 $text-color: black !default;
 $body-color: #e4e1e0 !default;
 
+$alt-text-color: #e4e1e0 !default;
+$alt-body-color: #5a5a5a !default;
 /**
  * Links
  */
-$link-color: #fff73f !default;
+$link-color: #f6b860 !default;
 $link-decoration: none !default;
-$link-hover-color: adjust-hue($link-color, -6deg) !default;
+$link-hover-color: adjust-hue($link-color, -12deg) !default;
 $link-hover-decoration: $link-decoration !default;
+
+$alt-link-color: #f6b860 !default;
+$alt-link-decoration: none !default;
+$alt-link-hover-color: adjust-hue($alt-link-color, 12deg) !default;
+$alt-link-hover-decoration: $alt-link-decoration !default;
 
 /**
  * Tags
