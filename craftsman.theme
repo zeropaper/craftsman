@@ -39,8 +39,7 @@ function craftsman_preprocess_html(&$variables) {
   // If is homepage.
   $variables['attributes']['class'][] = \Drupal::service('path.matcher')
     ->isFrontPage() ? 'frontpage' : '';
-  // Node type class.
-  // Node ID.
+  // Node ID and type.
   $params = Url::fromUserInput($path)->getRouteParameters();
   if (isset($params['node'])) {
     $node = Node::load($params['node']);
@@ -50,6 +49,11 @@ function craftsman_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = $variables['logged_in'] ? 'logged-in' : 'logged-out';
   // If is debug.
   $variables['debug'] = theme_get_setting('debug');
+  if ($variables['debug']) {
+    $variables['browsersync_host'] = theme_get_setting('browsersync_host');
+    $variables['browsersync_host'] = empty($variables['browsersync_host']) ? 'localhost' : $variables['browsersync_host'];
+    $variables['browsersync_port'] = theme_get_setting('browsersync_port');
+  }
 }
 
 /**
