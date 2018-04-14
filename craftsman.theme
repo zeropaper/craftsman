@@ -42,14 +42,11 @@ function craftsman_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = $variables['logged_in'] ? 'logged-in' : 'logged-out';
   // If is debug.
   $variables['debug'] = theme_get_setting('debug');
-  // dump($variables['debug'] . ' debug');
-  /*
   if ($variables['debug']) {
-    $variables['attributes']['class'][] = 'debug';
-    $variables['browsersync_port'] = theme_get_setting('browsersync_port');
     $variables['browsersync_host'] = theme_get_setting('browsersync_host');
+    $variables['browsersync_host'] = empty($variables['browsersync_host']) ? 'localhost' : $variables['browsersync_host'];
+    $variables['browsersync_port'] = theme_get_setting('browsersync_port');
   }
-  */
 }
 
 /**

@@ -31,7 +31,7 @@ function craftsman_form_system_theme_settings_alter(&$form, FormStateInterface &
   $form['craftsman']['browsersync_port'] = [
     '#type'          => 'textfield',
     '#title'         => t('BrowserSync port'),
-    // '#placeholder'   => 3000,
+    '#placeholder'   => 3000,
     '#default_value' => theme_get_setting('browsersync_port'),
     '#description'   => t("BrowserSync is disabled when not provided.")
   ];
@@ -41,7 +41,7 @@ function craftsman_form_system_theme_settings_alter(&$form, FormStateInterface &
     '#title'         => t('BrowserSync host'),
     // '#placeholder'   => 'localhost',
     '#default_value' => theme_get_setting('browsersync_host'),
-    '#description'   => t("Will use `location.hostname` if empty.")
+    '#description'   => t("Will be \"localhost\" if empty. If the value is \"HOST\", the script will use `location.hostname`.")
   ];
   //
 
