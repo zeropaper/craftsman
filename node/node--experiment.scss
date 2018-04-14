@@ -33,7 +33,7 @@
   }
 
   .field {
-    &.field--name-field-experiment-iframe,
+    &.field--name-field-link,
     &.field--name-field-experiment-pictures {
       background: none;
       position: absolute;
@@ -45,7 +45,7 @@
       right: 0;
     }
 
-    &.field--name-field-experiment-iframe {
+    &.field--name-field-link {
       z-index: 4;
 
       iframe {

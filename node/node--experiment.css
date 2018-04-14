@@ -54,7 +54,7 @@
 .nodetype--experiment .node__meta {
   display: none; }
 
-.nodetype--experiment .field.field--name-field-experiment-iframe, .nodetype--experiment .field.field--name-field-experiment-pictures {
+.nodetype--experiment .field.field--name-field-link, .nodetype--experiment .field.field--name-field-experiment-pictures {
   background: none;
   position: absolute;
   padding: 0;
@@ -64,9 +64,9 @@
   bottom: 0;
   right: 0; }
 
-.nodetype--experiment .field.field--name-field-experiment-iframe {
+.nodetype--experiment .field.field--name-field-link {
   z-index: 4; }
-  .nodetype--experiment .field.field--name-field-experiment-iframe iframe {
+  .nodetype--experiment .field.field--name-field-link iframe {
     border: none;
     width: 100%;
     height: 100%;
