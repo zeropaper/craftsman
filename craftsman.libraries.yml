@@ -2,6 +2,7 @@ fonts:
   version: VERSION
   css:
     theme:
+      fonts/ibm-plex-sans.css: {}
       fonts/ibm-plex-mono.css: {}
 
 ###############################################################
