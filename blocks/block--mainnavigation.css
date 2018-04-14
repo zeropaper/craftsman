@@ -2,9 +2,6 @@
  * Links
  */
 /**
- * Tags
- */
-/**
  * Headings
  */
 /**
@@ -29,6 +26,10 @@
   .menu--hamburger input {
     display: none; }
   .menu--hamburger label {
+    display: block;
+    height: 1.2rem;
+    line-height: 1em;
+    width: 1.2rem;
     cursor: pointer;
     color: #f6b860;
     -webkit-transition: color 218ms ease-out;
@@ -41,12 +42,12 @@
       content: '';
       display: block;
       position: absolute;
-      top: -.5vmin;
-      left: -.5vmin;
-      width: calc(100% + 1vmin);
-      height: calc(100% + 1vmin);
+      top: -.4vmin;
+      left: -.65vmin;
+      width: calc(100% + 1.4vmin);
+      height: calc(100% + 1.4vmin);
       border-radius: 100%;
-      border: 0.125vmin solid #e4e1e0;
+      border: 0.15vmin solid #e4e1e0;
       -webkit-transition: border-color 218ms ease-out;
       transition: border-color 218ms ease-out; }
   .menu--hamburger .menu {

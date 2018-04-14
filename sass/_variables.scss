@@ -1,4 +1,6 @@
 $text-color: black !default;
+$text-font: 'IBM Plex Sans', sans !default;
+$text-font-weight: 400 !default;
 $body-color: #e4e1e0 !default;
 
 $alt-text-color: #e4e1e0 !default;
@@ -17,11 +19,7 @@ $alt-link-hover-color: adjust-hue($alt-link-color, 12deg) !default;
 $alt-link-hover-decoration: $alt-link-decoration !default;
 
 /**
- * Tags
- */
-
-
-/**
  * Headings
  */
-$heading-font: 'IBM Plex Mono Light', monospace  !default;
+$heading-font: $text-font  !default;
+$heading-font-weight: 100;

@@ -13,6 +13,10 @@
   }
 
   label {
+    display: block;
+    height: 1.2rem;
+    line-height: 1em;
+    width: 1.2rem;
     cursor: pointer;
     color: $link-color;
     transition: color 218ms ease-out;
@@ -27,12 +31,12 @@
       content: '';
       display: block;
       position: absolute;
-      top: -.5vmin;
-      left: -.5vmin;
-      width: calc(100% + 1vmin);
-      height: calc(100% + 1vmin);
+      top: -.4vmin;
+      left: -.65vmin;
+      width: calc(100% + 1.4vmin);
+      height: calc(100% + 1.4vmin);
       border-radius: 100%;
-      border: .125vmin solid $body-color;
+      border: .15vmin solid $body-color;
       transition: border-color 218ms ease-out;
     }
   }

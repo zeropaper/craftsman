@@ -87,7 +87,7 @@ body,
 h1.page-title {
   text-align: center;
   font-size: inherit;
-  // font-weight: 400;
+  font-weight: 600;
   max-width: 100%;
   margin: 0;
   @extend %text-overflow-ellipsis;
@@ -106,24 +106,6 @@ h1.page-title {
   display: flex;
   flex-direction: column;
 }
-
-/*
-.layout-sidebar-first {
-
-}
-
-.layout-sidebar-second {
-
-}
-
-.layout-footer {
-
-}
-
-.nodetype--experiment {
-
-}
-*/
 
 .entity-pager-list {
   margin: 0;
@@ -160,3 +142,38 @@ body.node-1 {
     }
   }
 }
+
+@keyframes page-transition-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes page-transition-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+body {
+  main {
+    animation-name: page-transition-in;
+    animation-duration: 200ms;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  &.page-transition main {
+    animation-name: page-transition-out;
+  }
+}
+

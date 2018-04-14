@@ -2,9 +2,6 @@
  * Links
  */
 /**
- * Tags
- */
-/**
  * Headings
  */
 /**
@@ -111,6 +108,7 @@ body,
 h1.page-title {
   text-align: center;
   font-size: inherit;
+  font-weight: 600;
   max-width: 100%;
   margin: 0; }
 
@@ -140,23 +138,6 @@ h1.page-title {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-/*
-.layout-sidebar-first {
-
-}
-
-.layout-sidebar-second {
-
-}
-
-.layout-footer {
-
-}
-
-.nodetype--experiment {
-
-}
-*/
 .entity-pager-list {
   margin: 0;
   display: -webkit-box;
@@ -195,4 +176,58 @@ body.node-1 .block-system-main-block {
     -ms-flex-item-align: center;
         align-self: center;
     margin: 0; }
+
+@-webkit-keyframes page-transition-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes page-transition-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes page-transition-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0); } }
+
+@keyframes page-transition-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0); } }
+
+body main {
+  -webkit-animation-name: page-transition-in;
+          animation-name: page-transition-in;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+body.page-transition main {
+  -webkit-animation-name: page-transition-out;
+          animation-name: page-transition-out; }
 /*# sourceMappingURL=page.css.map */

@@ -1,10 +1,29 @@
 'use strict';
 
 (function (Drupal) {
-  Drupal.behaviors.page = {
-    attach: function attach(context, settings) {
-      // eslint-disable-next-line no-console
-      console.log('page behavior attach', context, settings);
+  var _document = document,
+      body = _document.body;
+
+  var selector = '.layout-container a[href^="/"]:not(.js-page-transition):not(.js-no-page-transition)';
+
+  var fadePage = function fadePage(destination) {
+    return function (event) {
+      event.preventDefault();
+      body.addEventListener('animationend', function () {
+        window.location.href = destination;
+      });
+      body.classList.add('page-transition');
+    };
+  };
+
+  Drupal.behaviors.pageTransition = {
+    attach: function attach(context) {
+      var links = body.querySelectorAll(selector);
+
+      links.forEach(function (link) {
+        link.classList.add('js-page-transition');
+        link.addEventListener('click', fadePage(link.href));
+      });
     }
   };
 })(window.Drupal);

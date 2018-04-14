@@ -1,4 +1,6 @@
+// eslint-disable-next-line
 ((Drupal) => {
+  /*
   Drupal.behaviors.html = {
     //
     attach: (context, settings) => {
@@ -6,4 +8,5 @@
       console.log('html behavior attach', context, settings);
     },
   };
+  */
 })(window.Drupal);

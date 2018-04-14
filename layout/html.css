@@ -2,39 +2,48 @@
  * Links
  */
 /**
- * Tags
- */
-/**
  * Headings
  */
 /**
  * Headings
  */
 .layout-container h1,
+.layout-container .h1,
 .layout-container h2,
+.layout-container .h2,
 .layout-container h3,
+.layout-container .h3,
 .layout-container h4,
-.layout-container h5 {
-  font-family: "IBM Plex Mono Light", monospace;
+.layout-container .h4,
+.layout-container h5,
+.layout-container .h5 {
+  font-family: "IBM Plex Sans", sans;
+  font-weight: 100;
+  font-style: normal;
   margin: 0 0 .5em 0; }
 
-.layout-container h1 {
+.layout-container h1,
+.layout-container .h1 {
   font-size: 3.6rem; }
 
 
-.layout-container h2 {
+.layout-container h2,
+.layout-container .h2 {
   font-size: 2rem; }
 
 
-.layout-container h3 {
+.layout-container h3,
+.layout-container .h3 {
   font-size: 1.6rem; }
 
 
-.layout-container h4 {
+.layout-container h4,
+.layout-container .h4 {
   font-size: 1.4rem; }
 
 
-.layout-container h5 {
+.layout-container h5,
+.layout-container .h5 {
   font-size: 1.2rem; }
 
 /**
@@ -50,13 +59,12 @@
  * Links
  */
 .layout-container a:focus, .layout-container a:hover {
-  color: #ffe43f;
+  color: #f69a60;
   text-decoration: none; }
 
 .layout-container a, .layout-container a:link {
-  color: #ffb93f;
-  text-decoration: none;
-  }
+  color: #f6b860;
+  text-decoration: none; }
 
 *,
 *:before,
@@ -69,8 +77,7 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  background-color: #e4e1e0;
-  }
+  background-color: #e4e1e0; }
 
 html {
   width: 100%;
@@ -85,7 +92,11 @@ html {
     html {
       font-size: 16px; } }
 
-.layout-container img {
-  max-width: 100%;
-  height: auto; }
+.layout-container {
+  font-family: "IBM Plex Sans", sans;
+  font-weight: 400;
+  font-style: normal; }
+  .layout-container img {
+    max-width: 100%;
+    height: auto; }
 /*# sourceMappingURL=html.css.map */
