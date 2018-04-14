@@ -112,10 +112,13 @@ h1.page-title {
   display: flex;
 
   .entity-pager-item {
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+    min-width: 1.6rem;
     display: block;
     margin: 0;
     &:first-child {
-      padding-right: .5rem;
+      margin-right: .5rem;
     }
   }
 }
